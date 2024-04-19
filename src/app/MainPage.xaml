@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carpinchazure.MainPage"
+             Title="Carpinchazure">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="simp.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <Button
+                x:Name="CarpinchosBtn"
+                Text="Muéstrame los carpinchos!"
+                Clicked="OnCarpinchosClicked"
+                HorizontalOptions="Fill" 
+                Margin="0,0,0,50" />
+
+            <Label
+                Text="¿Prefieres contenido premium?"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"
+                />
+            
+            <Image
+                Source="pagaraprata.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <Button
+                x:Name="PremiumCarpinchosBtn"
+                Text="Paga ra prata" 
+                Clicked="OnCarpinchosPremiumClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
